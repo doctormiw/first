@@ -67,7 +67,8 @@ const particleTexture = textureLoader.load('./textures/particles/3.png')
     const particlesMaterial = new THREE.PointsMaterial({
         size: 0.1,
         sizeAttenuation: true,
-        color: ('grey')
+        color: ('#363636'),
+        opacity: 1
 })
 particlesMaterial.transparent = true,
 particlesMaterial.alphaMap = particleTexture
@@ -91,7 +92,7 @@ const outerMaterial = new THREE.MeshPhysicalMaterial({
     clearcoat: 1.0,
     clearcoatRoughness: 0.1,
     transmission: 1.0, // Прозрачность
-    ior: 1.3, // Преломление
+    ior: 1.3, // Преломлениe
     thickness: 1,
     opacity: .8,
     transparent: true,
