@@ -240,13 +240,18 @@ window.addEventListener('resize', () => {
 /**
  * Camera
  */
-const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height, 0.1, 100)
+const camera = new THREE.PerspectiveCamera(85, sizes.width / sizes.height, .01, 30)
 camera.position.set(4, 2, 5)
+
 scene.add(camera)
 
 // Controls
 const controls = new OrbitControls(camera, canvas)
 controls.enableDamping = true
+controls.dampingFactor = 0.02;
+controls.minDistance = 5
+controls.maxDistance = 8
+controls.enablePan = false
 
 /**
  * Renderer
