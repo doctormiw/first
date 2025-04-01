@@ -3,8 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>test</title>
+    <title>spike ball</title>
     <link rel="stylesheet" href="./style.css">
+
+    <!-- Favicon (теперь ссылаемся на корневую папку images) -->
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../images/favicon.png" type="image/png">
+    <link rel="icon" href="../images/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+    
+    <!-- Preview image (теперь ссылаемся на корневую папку images) -->
+    <meta property="og:image" content="../images/preview-image.png">
+    <meta name="twitter:image" content="../images/preview-image.png">
+
+    <style>
+        body { margin: 0; }
+        canvas { display: block; }
+    </style>
 </head>
 <body>
     <canvas class="webgl"></canvas>

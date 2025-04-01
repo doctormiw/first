@@ -67,8 +67,8 @@ const particleTexture = textureLoader.load('./textures/particles/3.png')
     const particlesMaterial = new THREE.PointsMaterial({
         size: 0.1,
         sizeAttenuation: true,
-        // color: ('#363636'),  
-        color: ('#ffffff'),  
+        color: ('#363636'),  
+        // color: ('#ffffff'),  
         opacity: 1
 })
 particlesMaterial.transparent = true,
